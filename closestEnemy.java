@@ -4,7 +4,10 @@ class closestEnemy{
         
         int indexOfOne = -1;
         for(int i = 0 ; i < arr.length ; i++){
-            if(arr[i] == 1) indexOfOne = i ;
+            if(arr[i] == 1){
+                indexOfOne = i ;
+                break;
+            }
         }
         
         int result = Integer.MAX_VALUE;
